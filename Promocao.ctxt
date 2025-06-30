@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Promocao
+comment1.params=nome\ descricao\ desconto\ dataInicio\ dataFim
+comment1.target=Promocao(java.lang.String,\ java.lang.String,\ float,\ java.time.LocalDateTime,\ java.time.LocalDateTime)
+comment2.params=
+comment2.target=void\ ativar()
+comment3.params=
+comment3.target=void\ desativar()
+comment4.params=
+comment4.target=boolean\ estaAtiva()
+comment5.params=
+comment5.target=java.time.Duration\ getTempoRestante()
+comment6.params=preco
+comment6.target=float\ getEconomia(float)
+comment7.params=
+comment7.target=java.lang.String\ getNome()
+comment8.params=
+comment8.target=float\ getDesconto()
+numComments=9

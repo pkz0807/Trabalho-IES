@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Lojista
+comment1.params=nome\ email\ senha
+comment1.target=Lojista(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=index
+comment2.target=void\ excluirPromocao(int)
+comment3.params=
+comment3.target=void\ visualizarPromocoes()
+numComments=4

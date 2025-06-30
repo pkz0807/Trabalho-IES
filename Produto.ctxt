@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=nome\ precoOriginal\ imagem
+comment1.target=Produto(java.lang.String,\ float,\ java.lang.String)
+comment2.params=
+comment2.target=boolean\ emPromocao()
+comment3.params=
+comment3.target=float\ getPrecoComDesconto()
+comment4.params=
+comment4.target=void\ exibir()
+numComments=5
