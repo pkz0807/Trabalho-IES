@@ -1,3 +1,5 @@
+package cadastrapromo;
+
 public class Produto {
     private String nome;
     private float precoOriginal;
@@ -24,9 +26,27 @@ public class Produto {
 
     public void exibir() {
         System.out.println(nome + " - R$" + getPrecoComDesconto());
+        if (emPromocao()) {
+            System.out.println("Promoção: " + promocao.getNome());
+            System.out.println("Descrição: " + promocao.getDescricao());
+            System.out.println("Desconto: " + (promocao.getDesconto() * 100) + "%");
+            System.out.println("Válida até: " + promocao.getDataFim());
+        }
     }
 
     public void setPromocao(Promocao p) {
         this.promocao = p;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public float getPrecoOriginal() {
+        return precoOriginal;
+    }
+
+    public Promocao getPromocao() {
+        return promocao;
     }
 }
