@@ -1,5 +1,7 @@
 package cadastrapromo;
 
+import java.time.LocalDate;
+
 public class Produto {
     private String nome;
     private float precoOriginal;
@@ -31,6 +33,8 @@ public class Produto {
             System.out.println("Descrição: " + promocao.getDescricao());
             System.out.println("Desconto: " + (promocao.getDesconto() * 100) + "%");
             System.out.println("Válida até: " + promocao.getDataFim());
+        } else {
+            System.out.println("Produto sem promoção ativa.");
         }
     }
 
@@ -44,6 +48,10 @@ public class Produto {
 
     public float getPrecoOriginal() {
         return precoOriginal;
+    }
+
+    public String getImagem() {
+        return imagem;
     }
 
     public Promocao getPromocao() {
