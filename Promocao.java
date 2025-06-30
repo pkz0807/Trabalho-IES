@@ -1,3 +1,5 @@
+package cadastrapromo;
+
 import java.time.*;
 
 public class Promocao {
@@ -42,7 +44,32 @@ public class Promocao {
         return nome;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
     public float getDesconto() {
         return desconto;
     }
+
+    public LocalDateTime getDataFim() {
+        return dataFim;
+    }
+
+    public LocalDateTime getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(LocalDateTime dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
+    }
+    
 }
