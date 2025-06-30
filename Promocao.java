@@ -25,19 +25,11 @@ public class Promocao {
     }
 
     public void desativar() {
-        if (LocalDateTime.now().isAfter(dataFim)) ativa = false;
+        if (ativa) ativa = false;
     }
 
     public boolean estaAtiva() {
         return ativa;
-    }
-
-    public Duration getTempoRestante() {
-        return Duration.between(LocalDateTime.now(), dataFim);
-    }
-
-    public float getEconomia(float preco) {
-        return preco * desconto;
     }
 
     public String getNome() {
@@ -59,17 +51,4 @@ public class Promocao {
     public LocalDateTime getDataInicio() {
         return dataInicio;
     }
-
-    public void setDataInicio(LocalDateTime dataInicio) {
-        this.dataInicio = dataInicio;
-    }
-
-    public boolean isAtiva() {
-        return ativa;
-    }
-
-    public void setAtiva(boolean ativa) {
-        this.ativa = ativa;
-    }
-    
 }
